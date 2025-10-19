@@ -1,0 +1,23 @@
+# 1) Input section
+name = input("Enter Employee Name: Kim Smith").strip()
+shifts = int(input("Enter number of shifts: 25").strip())
+transactions = int(input("Enter number of transactions: 75").strip())
+total_value = float(input("Enter transactions dollar value: 40000.00").strip())
+# 2) Calculate productivity score
+score = total_value / (transactions * shifts)
+
+# 3) Determine bonus using nested if statements
+if score <= 30:
+    bonus = 50.0
+else:
+    if score <= 69:
+        bonus = 75.0
+    else:
+        if score <= 199:
+            bonus = 100.0
+        else:
+            bonus = 200.0
+
+# 4) Output results
+print("Employee Name:", name)
+print("Employee Bonus: $" + "{:.1f}".format(bonus))
