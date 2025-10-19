@@ -1,8 +1,9 @@
 # 1) Input section
-name = input("Enter Employee Name: Kim Smith").strip()
-shifts = int(input("Enter number of shifts: 25").strip())
-transactions = int(input("Enter number of transactions: 75").strip())
-total_value = float(input("Enter transactions dollar value: 40000.00").strip())
+name = input("Enter Employee Name: ").strip()
+shifts = int(input("Enter number of shifts: ").strip())
+transactions = int(input("Enter number of transactions: ").strip())
+total_value = float(input("Enter transactions dollar value: ").strip())
+
 # 2) Calculate productivity score
 score = total_value / (transactions * shifts)
 
